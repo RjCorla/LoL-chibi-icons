@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e4ebf5;
+}
+
+.container {
+  margin: 3% 5%;
+  padding: 20px;
+  box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+  border-radius: 2rem;
+  border: 3px solid #e4ebf5;
+}
+
+/* ====== HEADER ====== */
+header {
+  margin-bottom: 1.5em;
+}
+
+header h1,
+header p {
+  color: #6d5dfc;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+header p {
+  font-size: 0.8em;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+/* ====== GALLERY ====== */
+.gallery {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery div {
+  padding: 0.8em;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+  border-radius: 1em;
+  border: 2px solid #e4ebf5;
+}
+
+.gallery div img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5em;
+  box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+
+  border: 3px solid #6d5dfc;
+}
+
+.gallery div p {
+  color: #6d5dfc;
+  font-weight: bold;
+}
+
+/* ====== CONTACT ====== */
+
+.contact {
+  box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+  border-radius: 1em;
+  border: 3px solid #e4ebf5;
+  margin-top: 2em;
+  padding: 2em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  width: 430px;
+  height: auto;
+  padding: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc {
+  color: #6d5dfc;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.desc h3 {
+  font-size: 1.7em;
+}
+
+.desc p {
+  font-size: smaller;
+  opacity: 0.7;
+}
+
+form {
+  width: 100%;
+  height: auto;
+}
+
+form p {
+  color: #6d5dfc;
+  font-weight: bold;
+  font-size: small;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  height: 2.8rem;
+  border-radius: 15px;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7,
+    inset -0.2rem -0.2rem 0.5rem #fff;
+  border: 3px solid #e4ebf5;
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+}
+
+form textarea {
+  resize: none;
+  height: 5rem;
+}
+
+form .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+form .btn-container .btn {
+  outline: none;
+  background: #6d5dfc;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #e4ebf5;
+  width: 50%;
+  box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+  font-weight: bold;
+  color: white;
+}
+
+form .btn-container .btn:hover {
+  background: #e4ebf5;
+  border: 2px solid #6d5dfc;
+  color: #6d5dfc;
+}
+
+/* ====== COPY ====== */
+.copy {
+  margin-top: 1.5em;
+  padding: 20px;
+  box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #fff;
+  border-radius: 2rem;
+  border: 3px solid #e4ebf5;
+  text-align: center;
+  font-size: smaller;
+  opacity: 0.7;
+}
+
+.copy .pandora {
+  font-weight: bold;
+}
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 5%;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact {
+    padding: 10px 0;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+}
